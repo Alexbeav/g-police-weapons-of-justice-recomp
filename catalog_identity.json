@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "G-Police: Weapons of Justice",
+    "id": "SLUS-00798",
+    "boot_exe": "SLUS_007.98"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 2
+  },
+  "rom_identity": {
+    "cue_name": "G-Police - Weapons of Justice (USA).cue",
+    "bin_name": "G-Police - Weapons of Justice (USA).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 701396976,
+      "md5": "88c94a5e217f67aaafc9bf7016dfc871",
+      "sha1": "6465f16acf5b9818a520ce28ca476c3d4eec6856",
+      "crc32": "c6af61a9"
+    },
+    "disc_fp": "553d59dbea31d7708a56e5a599a7edfbab0980b59333d4a053af6b462f8c8a79"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80035020",
+    "text_size": "0x0003F000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 589,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
